@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	table {
+		border-collapse: collapse;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	th, td {
+		border: 1px solid;
+
+	}
+
+	td.title {
+		font-weight: bold;
+	}
+	</style>
+</head>
+<body>
+	<img src="./analysisFlow.png" style="display: block; margin: 0 auto;" />
+	<table>
+		<thead>
+			<tr>
+				<th rowspan="2" colspan="2"></th>
+				<th colspan="2">분석축(설명변수)</th>
+			</tr>
+			<tr>
+				<th>질적(기준을 정하고 이항 분류로)</th>
+				<th>다수(양, 질 포함)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="title" rowspan="2">
+					아웃컴(반응변수)
+				</td>
+				<td class="title">
+					양적(연속형)
+				</td>
+				<td>
+					평균값의 차이를 t검정
+				</td>
+				<td>
+					다중회귀분석
+				</td>
+			</tr>
+			<tr>
+				<td class="title">
+					질적(범주형, 있음/없음)
+				</td>
+				<td>
+					비율차이를 z 검정 <br/>
+					(카이제곱검정과 동일)
+				</td>
+				<td>
+					로지스틱 회귀
+				</td>
+			</tr>
+			<tr>
+				<td class="title" rowspan="2">
+					축소
+				</td>
+				<td class="title">
+					양적(연속형)
+				</td>
+				<td colspan="2">
+					인자분석
+				</td>
+			</tr>
+			<tr>
+				<td class="title">
+					질적(범주형)
+				</td>
+				<td colspan="2">
+					군집분석
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>출처 : 통계의 힘(니시우치 히로무, 비전코리아)</p>
+</body>
+</html>

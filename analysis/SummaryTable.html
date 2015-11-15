@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	table {
+		border-collapse: collapse;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	th, td {
+		border: 1px solid;
+
+	}
+
+	td.title {
+		font-weight: bold;
+	}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th rowspan="2" colspan="2"></th>
+				<th colspan="4">분석축(설명변수)</th>
+			</tr>
+			<tr>
+				<th>두 그룹 간의 비교</th>
+				<th>다그룹 간의 비교</th>
+				<th>연속값의 크기로 비교</th>
+				<th>복수의 요인으로 동시에 비교</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="title" rowspan="2">
+					비교하고 싶은 것(반응변수)
+				</td>
+				<td class="title">
+					연속값
+				</td>
+				<td>
+					평균값의 차이를 t검정
+				</td>
+				<td>
+					평균값의 차이를 분산분석
+				</td>
+				<td>
+					회귀분석
+				</td>
+				<td>
+					다중회귀분석
+				</td>
+			</tr>
+			<tr>
+				<td class="title">
+					있음/없음 등의 두 값
+				</td>
+				<td colspan="2">
+					분할표의 기술과 카이제곱검정
+				</td>
+				<td colspan="2">
+					로지스틱 회귀
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
